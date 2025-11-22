@@ -261,6 +261,7 @@ export function CelestiaGallery() {
   const [showInstructions, setShowInstructions] = useState(true)
   const { loading, error, loadInitialData } = usePhotoData()
   const { photos, openPhotoViewer, isPhotoViewerOpen } = useGalleryStore()
+  const { loading: storeLoading } = useGalleryStore()
   const { flyToPhoto } = useCameraController()
 
   // Hide instructions after delay
