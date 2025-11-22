@@ -305,7 +305,7 @@ export function CelestiaGallery() {
   }, [loadInitialData])
 
   // Show loading screen
-  if (loading.isLoading || !storeLoading.photosLoaded) {
+  if (!isClient || loading.isLoading || !storeLoading.photosLoaded) {
     return <LoadingScreen />
   }
 
