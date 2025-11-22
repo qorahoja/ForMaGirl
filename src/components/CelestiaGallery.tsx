@@ -385,6 +385,8 @@ export function CelestiaGallery() {
         <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-sm p-4 rounded-lg text-white text-xs font-mono">
           <div>Photos: {photos.length}</div>
           <div>Loading: {loading.isLoading ? 'Yes' : 'No'}</div>
+          <div>Store Loading: {storeLoading.isLoading ? 'Yes' : 'No'}</div>
+          <div>Photos Loaded: {storeLoading.photosLoaded ? 'Yes' : 'No'}</div>
           <div>Error: {error ? 'Yes' : 'No'}</div>
         </div>
       )}
