@@ -259,7 +259,7 @@ const SceneLighting = () => {
 export function CelestiaGallery() {
   const [isClient, setIsClient] = useState(false)
   const [showInstructions, setShowInstructions] = useState(true)
-  const { loading, error, loadInitialData, fetchPhotos } = usePhotoData()
+  const { loading, error, loadInitialData } = usePhotoData()
   const { photos, openPhotoViewer, isPhotoViewerOpen } = useGalleryStore()
   const { flyToPhoto } = useCameraController()
 
