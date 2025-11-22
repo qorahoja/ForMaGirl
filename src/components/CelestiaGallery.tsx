@@ -27,7 +27,7 @@ const LoadingScreen = () => {
           <div className="w-24 h-24 border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin mx-auto" />
         </div>
         <h1 className="text-4xl font-bold text-white mb-4">CelestiaGallery</h1>
-        <p className="text-blue-300 text-lg">Entering cosmic photo universe{dots}</p>
+        <p className="text-blue-300 text-lg">Loading cosmic photo universe{dots}</p>
       </div>
     </div>
   )
