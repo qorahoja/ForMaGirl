@@ -42,7 +42,7 @@ class PhotoViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         """Filter queryset based on query parameters"""
-        queryset = Photo.objects.select_related('thumbnail', 'medium', 'large').prefetch_related('tags')
+        queryset = Photo.objects.prefetch_related('tags')
 
         # Filter by visibility
         only_visible = self.request.query_params.get('visible', None)
