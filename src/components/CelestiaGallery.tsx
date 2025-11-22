@@ -126,6 +126,7 @@ const GalleryTitle = () => {
 }
 
 // Gallery instructions
+// Gallery instructions
 const GalleryInstructions = ({ visible }: { visible: boolean }) => {
   if (!visible) return null
 
@@ -137,12 +138,13 @@ const GalleryInstructions = ({ visible }: { visible: boolean }) => {
         color="white"
         anchorX="left"
         anchorY="middle"
-        font="/fonts/Geist-Regular.woff"
+        font="/fonts/Geist-Regular.otf"
         outlineWidth={0.02}
         outlineColor="black"
-        opacity={0.8}
       >
         Click photos to explore • Scroll to zoom • Drag to rotate
+        {/* Add opacity via material */}
+        <meshBasicMaterial transparent opacity={0.8} />
       </Text>
     </group>
   )
