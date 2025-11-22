@@ -157,7 +157,7 @@ class PhotoAdmin(admin.ModelAdmin):
     file_info.short_description = 'File Information'
 
     def get_queryset(self, request):
-        return super().get_queryset(request).select_related('thumbnail', 'medium').prefetch_related('tags')
+        return super().get_queryset(request).prefetch_related('tags')
 
     actions = ['bulk_set_visible', 'bulk_set_hidden', 'randomize_positions']
 
